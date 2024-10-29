@@ -1,0 +1,19 @@
+file.lock:
+  #文件锁目录
+  dir: locks
+  #文件锁名
+  fileName: fileLock
+
+
+
+spring.application.name: ping-service-1
+server:
+  port: 8081
+
+logging.level.root: INFO
+logging.file.name: logs/${spring.application.name}.log
+#logging.file.name: /Users/linshy/Documents/developer/workspace/${spring.application.name}.log
+
+
+# Change the URL to your Pong service address
+pong-service.base.url: "http://localhost:8080"
